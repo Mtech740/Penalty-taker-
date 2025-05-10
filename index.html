@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penalty Predictor AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Real-Time Penalty Shootout Predictor</h1>
+      <p>Select teams and see safest target zones in real time</p>
+    </header>
+
+    <section class="controls">
+      <label>Attacking Team:
+        <select id="attacker"></select>
+      </label>
+      <label>Goalkeeper Team:
+        <select id="keeper"></select>
+      </label>
+      <button id="predictBtn">Predict Safe Zone</button>
+      <button id="goalBtn">Report Goal</button>
+      <button id="missBtn">Report Miss</button>
+    </section>
+
+    <section class="pitch">
+      <canvas id="goalCanvas" width="600" height="300"></canvas>
+      <div id="suggestion">--</div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
